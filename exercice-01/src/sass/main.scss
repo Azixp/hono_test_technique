@@ -1,0 +1,105 @@
+// Variables
+@import "variables";
+@import "lib/minireset.scss";
+
+
+body {
+  background-color: $dark-blue;
+  box-sizing: border-box;
+  font-family: degular,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: degular-display,sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  font-style: normal;
+  color: $light-blue;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+h2 {
+  color: $white;
+  font-size: 1.5rem;
+}
+
+.upper-block {
+  display: flex;
+  justify-content: space-between;
+
+  div{
+    flex: auto;
+  }
+
+  div:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+    img {
+      width: 40%;
+    }
+    padding-bottom: 1.5rem;
+    padding-left: 4rem;
+  }
+  
+  div:last-child{
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    padding: 20px 20px 0 0;
+  }
+}
+
+.middle-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+
+  img:first-child {
+    position: absolute;
+    z-index: -1;
+    left: 23.6rem;
+    top: -2rem;
+  }
+  
+  img:last-child {
+    position: absolute;
+    right: 21rem;
+    bottom: 1rem;
+  }
+}
+
+.lower-block {
+  margin-top: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div:nth-child(2) {
+    position: absolute;
+    background: $light-orange;
+    padding: 1rem;
+    z-index: 3;
+    transform: rotate(-7deg);
+  }
+
+  div:last-child {
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    background: $dark-orange;
+    z-index: 2;
+    transform: rotate(-2deg)
+  }
+
+  img {
+    position: absolute;
+    z-index: 1;
+    left: 30.5rem;
+    top: -1.5rem;
+  }
+}
